@@ -26,12 +26,28 @@ const documentRegisterSchema =  {
         data: {
           type:'object',
         },
+
+        locationHash: {
+          description: "IPFS hash of document",
+          type:'string',
+        },
+        name: {
+          type: 'string',
+          description: 'The name of the registration'
+        },
         dependencies: {
           type: 'array',
           items: {
             type: 'string',
             description: 'Hashes of registration or receivers'
           },
+        },
+        receiverAttributes : {
+          type: 'array',
+          items: {
+            type : 'string',
+            description: 'The attributes which are linked to an receiver, e.g., name, email, dateOfBirth,...'
+          }
         },
         receivers : {
           type: 'array',

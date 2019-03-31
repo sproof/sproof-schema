@@ -16,7 +16,7 @@ const profileUpdateKeySchema =  {
       type : 'object',
       properties: {
         : {
-          description: "Description for revokation",
+          description: "Description for revocation",
           type: "string",
           maxLength: 512,
           minLength: 512,

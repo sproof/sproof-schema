@@ -1,20 +1,4 @@
-eiver : {
-      type: 'object',
-      properties: {
-        publicKey : { type: 'string', description : 'PublicKey of receiver'},
-        identificationHash : {type: 'string', description : 'Hash of identification data'}
-      },
-      required : ['publicKey']
-    },
-    data : {
-      type: 'object',
-      description: 'Data of the document'
-    }
-  },
-  required : ['receiver']
-};
-
-module.exports = documentSchema;const profileConfirmSchema =  {
+const profileConfirmSchema =  {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Profile Confirm",
   "description": "Confirm a profile sproof event",
