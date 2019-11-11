@@ -19,9 +19,9 @@ const documentReceiverAddSchema =  {
           description: "Hash of the registered document",
           type: "string"
         }
-      }
-    },
-    required : ['receiverId', 'documentHash'],
+      },
+      required : ['receiverId', 'documentHash']
+    }
   },
   required : ['eventType', 'data']
 };

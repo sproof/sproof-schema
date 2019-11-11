@@ -1,12 +1,19 @@
 {
   "name": "sproof-schema",
   "main": "index.js",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
     "url": "https://github.com/sproof/sproof-schema.git"
   },
-  "keywords": ["schema", "json", "sproof"],
+  "dependencies": {
+    "ajv": "^6.10.0"
+  },
+  "keywords": [
+    "schema",
+    "json",
+    "sproof"
+  ],
   "author": "Clemens Brunner",
-  "homepage" : "https://sproof.it"
+  "homepage": "https://sproof.io"
 }

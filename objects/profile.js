@@ -4,9 +4,15 @@ const profileSchema =  {
   "description": "A sproof profile",
   "type": "object",
   "properties": {
-    "name": {
+    name: {
       "description": "The name of a user",
       "type": "string",
+      "minLength" : 3,
+    },
+    username :{
+      "description": "Unique name of a user",
+      "type": "string",
+      pattern: '^[A-Za-z0-9._]*$',
       "minLength" : 3,
     },
     profileText: {
@@ -15,6 +21,12 @@ const profileSchema =  {
       "title": "Add your profile text",
       "maxLength": 500,
       "validationMessage": "Don't be greedy!"
+    },
+    publicKey: {
+      description: "The public key associated with the address",
+      type: "string",
+      "title": "Profiles public key",
+      "maxLength": 132,
     },
     "image": {
       "description": "A base64 encoded string of a image",
@@ -37,7 +49,7 @@ const profileSchema =  {
             "type": "string"
           },
           "messageId": {
-            "description": "The unique message_id which contrains the public key of the user",
+            "description": "The unique message_id which contains the public key of the user",
             "type": "string"
           },
           "platform": {
@@ -51,7 +63,7 @@ const profileSchema =  {
       "uniqueItems": true
     },
   },
-  "required" : ["name"]
+  "required" : ["name", "publicKey"]
 };
 
 module.exports = profileSchema;

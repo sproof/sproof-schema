@@ -20,9 +20,10 @@ const documentRevokeSchema =  {
           type: "string",
           maxLength: 512,
         }
-      }
-    },
-    required : ['receiverId']
+      },
+      required : ['receiverId']
+    }
+
   },
   required : ['eventType', 'data']
 };

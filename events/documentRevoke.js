@@ -16,13 +16,13 @@ const documentRevokeSchema =  {
           type: "string"
         },
         reason: {
-          description: "Description for revokation",
-          type: "string",
-          maxLength: 512,
+          description: "Revocation code",
+          type: "number",
         }
-      }
+      },
+      required : ['documentHash']
     },
-    required : ['eventId']
+
   },
   required : ['eventType', 'data']
 };

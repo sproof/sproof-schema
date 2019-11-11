@@ -31,6 +31,17 @@ const documentRegisterSchema =  {
           description: "IPFS hash of document",
           type:'string',
         },
+        documentType: {
+          description: "Type of document",
+          type: 'string'
+        },
+        tags : {
+          type: 'array',
+          items: {
+            type: 'string',
+            description: 'Tags to find the file'
+          },
+        },
         name: {
           type: 'string',
           description: 'The name of the registration'
@@ -47,6 +58,13 @@ const documentRegisterSchema =  {
           items: {
             type : 'string',
             description: 'The attributes which are linked to an receiver, e.g., name, email, dateOfBirth,...'
+          }
+        },
+        tags : {
+          type: 'array',
+          items: {
+            type : 'string',
+            description: 'Tags of the document'
           }
         },
         receivers : {

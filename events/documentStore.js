@@ -26,9 +26,10 @@ const documentStoreSchema =  {
           type: "string",
           maxLength: 100,
         }
-      }
-    },
-    required : ['documentId', 'locationHash']
+      },
+      required : ['documentId', 'locationHash']
+    }
+
   },
   required : ['eventType', 'data']
 };

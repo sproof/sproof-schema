@@ -1,3 +1,4 @@
+
 const profileConfirmSchema =  {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Profile Confirm",
