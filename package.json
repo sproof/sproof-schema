@@ -7,7 +7,7 @@
     "url": "https://github.com/sproof/sproof-schema.git"
   },
   "dependencies": {
-    "ajv": "^6.10.0"
+    "ajv": "^6.12.3"
   },
   "keywords": [
     "schema",
